@@ -1,3 +1,11 @@
+$main-color: #543ce2;
+
 body {
-  background-color: #543ce2;
+  background-color: $main-color;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
 }

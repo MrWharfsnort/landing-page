@@ -1,15 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import Navigation from "./Components/Navigation/Navigation";
-import TestComponent from "./Components/testComponent/TestComponent";
+import Navigation from './Components/Navigation/Navigation';
 
-import "./App.css";
-import "./scss/main.scss";
+import './scss/main.scss';
 
 const app = () => (
   <div className="App">
     <Navigation />
-    <TestComponent />
   </div>
 );
 

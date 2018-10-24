@@ -1,22 +1,22 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const path = require("path");
+const path = require('path');
 
 const htmlPlugin = new HtmlWebpackPlugin({
-  template: "./public/index.html",
-  filename: "./index.html"
+  template: './public/index.html',
+  filename: './index.html',
 });
 
 const cssPlugin = new MiniCssExtractPlugin({
-  filename: "style.[contenthash].css"
+  filename: 'style.[contenthash].css',
 });
 
 module.exports = {
-  entry: { main: "./src/index.js" },
+  entry: { main: './src/index.js' },
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "main.js"
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'main.js',
   },
   module: {
     rules: [
@@ -24,39 +24,38 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
-        }
+          loader: 'babel-loader',
+        },
       },
       {
         test: /\.s*css$/,
-        //use: ["style-loader", "css-loader"] not modular
         use: [
           {
-            loader: "style-loader"
+            loader: 'style-loader',
           },
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               modules: true,
               importLoaders: 1,
-              localIdentName: "[name]_[local]_[hash:base64]",
+              localIdentName: '[name]_[local]_[hash:base64]',
               sourceMap: true,
-              minimize: true
-            }
+              minimize: true,
+            },
           },
           {
-            loader: "sass-loader",
+            loader: 'sass-loader',
             options: {
               modules: true,
               importLoaders: 1,
-              localIdentName: "[name]_[local]_[hash:base64]",
+              localIdentName: '[name]_[local]_[hash:base64]',
               sourceMap: true,
-              minimize: true
-            }
-          }
-        ]
-      }
-    ]
+              minimize: true,
+            },
+          },
+        ],
+      },
+    ],
   },
-  plugins: [htmlPlugin, cssPlugin]
+  plugins: [htmlPlugin, cssPlugin],
 };
