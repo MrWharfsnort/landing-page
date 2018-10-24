@@ -9,7 +9,8 @@ const htmlPlugin = new HtmlWebpackPlugin({
 });
 
 const cssPlugin = new MiniCssExtractPlugin({
-  filename: "style.[contenthash].css"
+  filename: "[name].[contenthash].css",
+  chunkFilename: "[id][hash].css"
 });
 
 module.exports = {
@@ -29,29 +30,20 @@ module.exports = {
       },
       {
         test: /\.s*css$/,
-        //use: ["style-loader", "css-loader"] not modular
         use: [
           {
-            loader: "style-loader"
+            loader: MiniCssExtractPlugin.loader
           },
           {
             loader: "css-loader",
             options: {
-              modules: true,
-              importLoaders: 1,
-              localIdentName: "[name]_[local]_[hash:base64]",
-              sourceMap: true,
-              minimize: true
+              sourceMap: true
             }
           },
           {
             loader: "sass-loader",
             options: {
-              modules: true,
-              importLoaders: 1,
-              localIdentName: "[name]_[local]_[hash:base64]",
-              sourceMap: true,
-              minimize: true
+              sourceMap: true
             }
           }
         ]
