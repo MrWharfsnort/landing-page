@@ -5,7 +5,7 @@ import './AboutUs.scss';
 
 const aboutUs = () => (
   <div>
-    <Grid container spacing={24} style={{ padding: '25px' }} className="grid">
+    <Grid container spacing={24} className="grid">
       <Grid item xs={3}>
         <Card>
           <CardActionArea>
