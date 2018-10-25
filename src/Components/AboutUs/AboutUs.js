@@ -6,7 +6,7 @@ import './AboutUs.scss';
 const aboutUs = () => (
   <div>
     <Grid container spacing={24} className="grid">
-      <Grid item xs={3}>
+      <Grid item xs={12} md={3}>
         <Card className="card">
           <CardActionArea>
             <CardMedia
@@ -26,7 +26,7 @@ const aboutUs = () => (
           </CardActions>
         </Card>
       </Grid>
-      <Grid item xs={3}>
+      <Grid item xs={12} md={3}>
         <Card className="card">
           <CardActionArea>
             <CardMedia
@@ -46,7 +46,7 @@ const aboutUs = () => (
           </CardActions>
         </Card>
       </Grid>
-      <Grid item xs={3}>
+      <Grid item xs={12} md={3}>
         <Card className="card">
           <CardActionArea>
             <CardMedia
@@ -66,7 +66,7 @@ const aboutUs = () => (
           </CardActions>
         </Card>
       </Grid>
-      <Grid item xs={3}>
+      <Grid item xs={12} md={3}>
         <Card className="card">
           <CardActionArea>
             <CardMedia
