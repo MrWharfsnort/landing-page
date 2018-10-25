@@ -5,19 +5,19 @@ import './AboutUs.scss';
 
 const aboutUs = () => (
   <div>
-    <Grid container spacing={24} style={{ padding: '25px' }} className="grid">
+    <Grid container spacing={24} className="grid">
       <Grid item xs={3}>
-        <Card>
+        <Card className="card">
           <CardActionArea>
             <CardMedia
               component="img"
-              alt="Person 1"
-              image="https://image.shutterstock.com/image-photo/happy-businessman-isolated-handsome-man-260nw-609414131.jpg"
-              title="Person 1"
+              alt="Layer"
+              image="https://cdn.discordapp.com/avatars/497342095154085899/171a9c1542a9ba09f929661959ee84c8.png"
+              title="Layer"
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">John Doe</Typography>
-              <Typography component="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor diam sit amet tortor dignissim, in elementum ex dapibus. Curabitur felis dui, lacinia ut diam sit amet, aliquet vulputate urna. Curabitur et lobortis sapien, nec luctus leo.</Typography>
+              <Typography gutterBottom variant="h5" component="h2">Layer</Typography>
+              <Typography component="p">A proud member of Team 1 <hr /> Programming Team (Reddit)</Typography>
             </CardContent>
           </CardActionArea>
           <CardActions>
@@ -27,17 +27,17 @@ const aboutUs = () => (
         </Card>
       </Grid>
       <Grid item xs={3}>
-        <Card>
+        <Card className="card">
           <CardActionArea>
             <CardMedia
               component="img"
-              alt="Person 2"
-              image="https://image.shutterstock.com/image-photo/happy-businessman-isolated-handsome-man-260nw-609414131.jpg"
-              title="Person 2"
+              alt="Adrian Hajdin"
+              image="https://avatars3.githubusercontent.com/u/24898559?s=460&v=4"
+              title="Adrian Hajdin"
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">John Doe</Typography>
-              <Typography component="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor diam sit amet tortor dignissim, in elementum ex dapibus. Curabitur felis dui, lacinia ut diam sit amet, aliquet vulputate urna. Curabitur et lobortis sapien, nec luctus leo.</Typography>
+              <Typography gutterBottom variant="h5" component="h2">Adrian Hajdin</Typography>
+              <Typography component="p">A proud member of Team 1 <hr /> Programming Team (Reddit)</Typography>
             </CardContent>
           </CardActionArea>
           <CardActions>
@@ -47,17 +47,17 @@ const aboutUs = () => (
         </Card>
       </Grid>
       <Grid item xs={3}>
-        <Card>
+        <Card className="card">
           <CardActionArea>
             <CardMedia
               component="img"
-              alt="Person 3"
-              image="https://image.shutterstock.com/image-photo/happy-businessman-isolated-handsome-man-260nw-609414131.jpg"
-              title="Person 3"
+              alt="Beard Dev"
+              image="https://media.discordapp.net/attachments/503527419051900939/504780966829752320/IMG_7913_1.jpg?width=386&height=514"
+              title="Beard Dev"
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">John Doe</Typography>
-              <Typography component="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor diam sit amet tortor dignissim, in elementum ex dapibus. Curabitur felis dui, lacinia ut diam sit amet, aliquet vulputate urna. Curabitur et lobortis sapien, nec luctus leo.</Typography>
+              <Typography gutterBottom variant="h5" component="h2">Beard Dev</Typography>
+              <Typography component="p">A proud member of Team 1 <hr /> Programming Team (Reddit)</Typography>
             </CardContent>
           </CardActionArea>
           <CardActions>
@@ -67,17 +67,17 @@ const aboutUs = () => (
         </Card>
       </Grid>
       <Grid item xs={3}>
-        <Card>
+        <Card className="card">
           <CardActionArea>
             <CardMedia
               component="img"
-              alt="Person 4"
-              image="https://image.shutterstock.com/image-photo/happy-businessman-isolated-handsome-man-260nw-609414131.jpg"
-              title="Person 4"
+              alt="Mr Wharfsnort"
+              image="https://cdn.discordapp.com/avatars/272870377548546049/58d84f76e2d79ad9c0b7a1cdc2c839b2.png"
+              title="Mr Wharfsnort"
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">John Doe</Typography>
-              <Typography component="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor diam sit amet tortor dignissim, in elementum ex dapibus. Curabitur felis dui, lacinia ut diam sit amet, aliquet vulputate urna. Curabitur et lobortis sapien, nec luctus leo.</Typography>
+              <Typography gutterBottom variant="h5" component="h2">Mr. Wharfsnort</Typography>
+              <Typography component="p">A proud member of Team 1 <hr /> Programming Team (Reddit)</Typography>
             </CardContent>
           </CardActionArea>
           <CardActions>
