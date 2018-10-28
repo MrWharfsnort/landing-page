@@ -12,8 +12,8 @@
     "react-dom": "^16.5.2"
   },
   "scripts": {
-    "w-start": "webpack-dev-server --mode development --open",
-    "w-build": "webpack --mode production"
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -1,9 +1,7 @@
 import React from 'react';
 
-import Navigation from './Components/Navigation/Navigation';
-import AboutUs from './Components/AboutUs/AboutUs';
-
-import './scss/main.scss';
+import { Navigation, AboutUs } from './Components';
+import './App.scss';
 
 const app = () => (
   <div className="App">

@@ -1,0 +1,14 @@
+.grid {
+  padding: 25px; }
+
+.card {
+  height: 100%; }
+
+body {
+  background-color: #543ce2;
+  margin: 0;
+  padding: 0; }
+
+.App {
+  text-align: center; }
+
